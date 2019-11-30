@@ -1,0 +1,44 @@
+.header{
+  height: 80px;
+  background-color: #fff;
+  .header-top{
+    text-align: right;
+    line-height: 40px;
+    padding-right: 35px;
+    border-bottom: 1px solid #76da25;
+  }
+  span{
+    padding-right: 10px;
+  }
+  .header-bottom{
+    display: flex;
+    line-height: 30px;
+    .header-bottom-left{
+      position: relative;
+      width: 25%;
+      font-size: 20px;
+      text-align: center;
+      &::after{
+        position: absolute;
+        right: 50%;
+        top: 100%;
+        transform: translateX(38%);
+        content : '';
+        border-top: 20px solid white ;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-bottom : 20px solid transparent;
+      }
+    }
+    .header-bottom-right{
+      width: 75%;
+      text-align: right;
+      margin-right: 30px;
+      img{
+        margin: 0 15px;
+        width: 30px;
+        height: 20px;
+      }
+    }
+  }
+}
