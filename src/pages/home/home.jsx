@@ -54,7 +54,7 @@ export default class Home extends Component {
                         prefix={'日同比'}
                         suffix={<div>%<Icon style={{color: '#3f8600', marginLeft: 10}} type="arrow-up"/></div>}
                     />
-                </Card>
+                 </Card>
 
                 <Line/>
 

@@ -3,7 +3,7 @@ import { Upload, Icon, Modal,message } from 'antd';
 import PropTypes from 'prop-types'
 
 import {reqDeleteImage} from '../../api/index'
-import {BASE_IMG_URL} from '../../utils/constants'
+import {BASE_IMG_URL, SERVER_IMG_URL} from '../../utils/constants'
 
 
 function getBase64(file) {
@@ -38,7 +38,7 @@ export class PicturesWall extends React.Component {
                 uid: -index, // 每个file都有自己唯一的id
                 name: img, // 图片文件名
                 status: 'done', // 图片状态: done-已上传, uploading: 正在上传中, removed: 已删除
-                url: BASE_IMG_URL + img
+                url: SERVER_IMG_URL + img
             }))
         }
 

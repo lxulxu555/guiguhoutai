@@ -3,7 +3,7 @@ import {List, Card, Icon} from 'antd'
 
 import LinkButton from '../../components/link-button/link-button'
 import {resListID} from '../../api/index'
-import {BASE_IMG_URL} from '../../utils/constants'
+import {BASE_IMG_URL, SERVER_IMG_URL} from '../../utils/constants'
 
 
 const Item = List.Item
@@ -81,7 +81,7 @@ export default class ProductDetail extends Component {
                                       imgs.map(img => (
                                           <img
                                               key={img}
-                                              src={BASE_IMG_URL + img}
+                                              src={SERVER_IMG_URL + img}
                                               className="Product-Detail-image"
                                               alt="img"
                                           />
